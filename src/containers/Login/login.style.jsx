@@ -2,7 +2,6 @@ import { makeStyles } from "@material-ui/core/styles";
 
 export const useLoginStyles = makeStyles(theme => ({
   paperWrapperStyle: {
-    minWidth: "460px",
     display: "flex",
     flexDirection: "column",
     boxShadow: "0 12px 24px 0 rgba(44,39,56,0.02), 0 32px 64px 0 rgba(44,39,56,0.04)",
@@ -14,9 +13,7 @@ export const useLoginStyles = makeStyles(theme => ({
     justifyContent: "center",
     marginTop: 2,
     marginBottom: 67,
-    [`${theme.breakpoints.down("sm")}`]: {
-      minWidth: "auto"
-    }
+ 
   },
   // containerStyle: {
   //   backgroundColor: theme.palette.customStyles.backGroundColor,

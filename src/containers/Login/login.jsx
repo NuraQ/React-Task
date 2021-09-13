@@ -7,7 +7,6 @@ import Images from "../../images"
     const classes = useLoginStyles()
     const {containerStyle,paperWrapperStyle} = classes;
 
-    console.log(Images.logo)
     return (
         <Grid container className={paperWrapperStyle}>
             <div>

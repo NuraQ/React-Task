@@ -15,7 +15,8 @@ login: (dispatch) =>  {
         userData
     ).then((res) => {
         history.push(historyTargetObj);
-        setUserInfo(res.data.token)(dispatch)
+        setUserInfo(res.data.token)(dispatch);
+        localStorage.setItem("token",res.data.token );
         // dispatch({ type: 'SET_USER_INFO', payload: res })
         alert("success")
     }).catch((error)=>{
