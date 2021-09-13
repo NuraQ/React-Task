@@ -5,7 +5,8 @@ import {useLoginStyles} from "./login.style";
 import Images from "../../images"
  const Login = () => {
     const classes = useLoginStyles()
-    const {containerStyle,paperWrapperStyle} = classes
+    const {containerStyle,paperWrapperStyle} = classes;
+
     console.log(Images.logo)
     return (
         <Grid container className={paperWrapperStyle}>
@@ -13,7 +14,7 @@ import Images from "../../images"
              <image src={Images.logo} />
             </div>
             <Grid item xs={12}>
-            <LoginForm />
+            <LoginForm  />
             </Grid>
         </Grid>
     )
