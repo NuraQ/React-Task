@@ -11,13 +11,13 @@ const axiosInstance = axios.create({
 const CancelToken = axios.CancelToken;
 const isCancel = axios.isCancel;
 
-const setAuthHeader = (token: string): void => {
+const setAuthHeader = (token) => {
   if (axiosInstance) {
     axiosInstance.defaults.headers.common["Authorization"] = token;
   }
 };
 
-const deleteAuthHeader = (): void => {
+const deleteAuthHeader = () => {
   delete axiosInstance.defaults.headers.common["Authorization"];
 };
 

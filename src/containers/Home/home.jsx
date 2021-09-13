@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import{setProductsData} from "../../actions/products";
+import { setProductsData } from "../../actions/products";
 import ProductsList from "../ProductsList/products";
 
 const HomePage = () => {
@@ -16,7 +16,7 @@ const HomePage = () => {
         dispatch(setProductsData(dispatch))
     },[])
     useEffect(()=>{
-        console.log("products  , ", products)
+        // console.log("products  , ", products)
     },[products])
     return (
         <div>

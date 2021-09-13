@@ -3,11 +3,11 @@ import history from "../../routes/history";
 import {setUserInfo} from "../../actions/userInfo/userInfoActions";
 
 export const LoginApi = {
-login: (dispatch) =>  {
-    const userData = {
-        email: "eve.holt@reqres.in",
-        password: "cityslicka"
-    }
+login: (userData, dispatch) =>  {
+    // const userData = {
+    //     email: "eve.holt@reqres.in",
+    //     password: "cityslicka"
+    // }
     const historyTargetObj = {
         pathname: "/home"
       };
