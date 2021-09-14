@@ -13,7 +13,7 @@ import {
       case ADD_PRODUCT:
         return { ...state, products: action.payload };
       case GET_PRODUCTS_DATA:
-        return { ...state, products: { ...initialProductsState } };
+        return { ...state, products:  [...state.products, action.newItem] };
       default:
         return state;
     }

@@ -1,8 +1,5 @@
 
-import { useEffect } from "react";
 import Product from "./product/productItem"
-
-
 import React from "react";
 import Grid from "@material-ui/core/Grid";
 import { useSelector } from "react-redux";
@@ -14,9 +11,7 @@ export const ProductsList = (props) => {
     const classes = useGridStyles();
     const getProducts = state => state.products
     const products = useSelector(getProducts)
-    useEffect(()=>{
-        console.log(products.products)
-    })
+
     return (
         <div container className={classes.root}>
             <Grid container spacing={3}>

@@ -17,11 +17,11 @@ login: (userData, dispatch) =>  {
         history.push(historyTargetObj);
         setUserInfo(res.data.token)(dispatch);
         localStorage.setItem("token",res.data.token );
-        // dispatch({ type: 'SET_USER_INFO', payload: res })
+        dispatch({ type: 'SET_USER_INFO', payload: res })
         alert("success")
     }).catch((error)=>{
         console.log(error)
-        alert("failed")
+        alert("wrong email or password")
     })
     
 }
