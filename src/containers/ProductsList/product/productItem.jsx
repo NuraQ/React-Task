@@ -47,7 +47,7 @@ const Product = (props) => {
                 color="textSecondary"
                 component="p"
               >
-                2 weeks ago
+                {element.last_name}
               </Typography>
             </CardContent>
           </CardActionArea>

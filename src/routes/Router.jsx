@@ -13,8 +13,8 @@ export const RouterComponent = () => {
         <Router history={newHistory}>
             <Suspense fallback={<div>Loading... </div>}>
                 <Switch>
-                    <Route path={NonAuthRoutes.login} component={Login} />
-                    <AuthRoute path={"/"} component={HomePage} />
+                    <Route  path={NonAuthRoutes.login} component={Login} />
+                    <AuthRoute exact path={"/"} component={HomePage} />
                     <AuthRoute path={AuthRoutes.home} component={HomePage} />
                     <Route component={NotFound} />
                 </Switch>

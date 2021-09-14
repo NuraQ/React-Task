@@ -1,13 +1,4 @@
 import {  createTheme  } from "@material-ui/core/styles";
-// import {
-//   RobotoLightWoff2Font,
-//   RobotoRegularWoff2Font,
-//   RobotoMediumWoff2Font,
-//   RobotoBoldWoff2Font,
-//   NunitoWoff2RegularFont,
-//   NunitoSemiBoldWoff2RegularFont,
-//   NunitoWoff2MediumFont
-// } from "../fonts/";
 
 const theme = createTheme ({
   palette: {
@@ -108,21 +99,6 @@ const theme = createTheme ({
       "sans-serif"
     ].join(", ")
   },
-  overrides: {
-    MuiCssBaseline: {
-      "@global": {
-        "@font-face": [
-        //   RobotoLightWoff2Font,
-        //   RobotoRegularWoff2Font,
-        //   RobotoMediumWoff2Font,
-        //   RobotoBoldWoff2Font,
-        //   NunitoWoff2RegularFont,
-        //   NunitoSemiBoldWoff2RegularFont,
-        //   NunitoWoff2MediumFont
-        ]
-      }
-    }
-  }
 });
 
 export default theme;

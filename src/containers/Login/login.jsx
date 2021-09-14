@@ -1,19 +1,22 @@
 
-import { Grid } from "@material-ui/core";
+import { Grid, Typography } from "@material-ui/core";
 import { LoginForm } from "../../components/loginForm/LoginForm";
-import {useLoginStyles} from "./login.style";
-import Images from "../../images"
- const Login = () => {
+import { SIGN_IN } from "../../constants/login"
+import { useLoginStyles } from "./login.style";
+
+const Login = () => {
     const classes = useLoginStyles()
-    const {containerStyle,paperWrapperStyle} = classes;
+    const { paperWrapperStyle, signInTextStyle } = classes;
 
     return (
         <Grid container className={paperWrapperStyle}>
             <div>
-             <image src={Images.logo} />
+                <Typography component="h1" className={signInTextStyle}>
+                    {SIGN_IN}
+                </Typography>
             </div>
             <Grid item xs={12}>
-            <LoginForm  />
+                <LoginForm />
             </Grid>
         </Grid>
     )

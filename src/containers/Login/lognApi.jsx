@@ -14,9 +14,9 @@ login: (userData, dispatch) =>  {
     axios.post("https://reqres.in/api/login",
         userData
     ).then((res) => {
+        localStorage.setItem("token",res.data.token );
         history.push(historyTargetObj);
         setUserInfo(res.data.token)(dispatch);
-        localStorage.setItem("token",res.data.token );
         dispatch({ type: 'SET_USER_INFO', payload: res })
         alert("success")
     }).catch((error)=>{
