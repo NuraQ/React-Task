@@ -18,7 +18,6 @@ export const LoginForm = () => {
 
     const {
         emailTextField,
-        forgetPasswordButton,
         form,
         formControlStyle,
         inputFieldErroredStyle,

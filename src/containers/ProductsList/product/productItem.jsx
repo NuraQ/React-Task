@@ -42,7 +42,7 @@ const Product = (props) => {
                 </div>
               </div>
               <Typography
-                className={classes.timePublished}
+                className={classes.lastname}
                 variant="body2"
                 color="textSecondary"
                 component="p"

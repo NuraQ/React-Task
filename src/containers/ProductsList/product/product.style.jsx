@@ -11,7 +11,6 @@ export const useProductStyle = makeStyles((theme) => ({
     height: 140,
     display: "block",
     backgroundSize: "contain",
-    backgroundRepeat: "no-repeat",
     backgroundPosition: "top",
   },
   elementRoot: {
@@ -43,7 +42,7 @@ export const useProductStyle = makeStyles((theme) => ({
     alignSelf: "start",
   },
 
-  timePublished: {
+  lastname: {
     marginTop: "auto",
     alignSelf: "start",
   },

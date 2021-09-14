@@ -6,10 +6,10 @@ import Img from "../../images/not-found-page.jpg";
 
 const NotFound = () => {
   const classes = useNotFoundStyles();
-  const { container, svgContainer } = classes;
+  const {  svgContainer } = classes;
     console.log(Images.NotFoundImg)
   return (
-    <Grid container justify="center" spacing={0} className={container}>
+    <Grid container justify="center" >
       <Grid item lg={6} xs={12} className={svgContainer}>
         <img src={Img} />
       </Grid>

@@ -1,14 +1,9 @@
 import { makeStyles } from "@material-ui/core/styles";
-import { Theme } from "@material-ui/core";
 
 export const useLoginFormStyles = makeStyles((theme) => ({
   form: {
     width: "100%", // Fix IE 11 issue.
-    "& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline": {
-      borderColor: "#8b0000",
-      borderWidth: 1,
-      boxShadow: "0 1px 8px 0 rgba(0,148,141,0.23)"
-    }
+
   },
   submit: {
     background: `linear-gradient(114.17deg,#f7f7f7 0%, #f7f7f7 100%)`,
@@ -21,13 +16,6 @@ export const useLoginFormStyles = makeStyles((theme) => ({
     maxWidth: 400,
     textTransform: "none",
     fontFamily: "RobotoMedium"
-  },
-  forgetPasswordButton: {
-    fontFamily: "RobotoRegular",
-    textTransform: "none",
-    color: "#0880AE",
-    fontSize: 16,
-    marginBottom: 28
   },
   labelTextStyle: {
     fontSize: "16px",

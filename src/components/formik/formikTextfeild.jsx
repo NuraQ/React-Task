@@ -49,7 +49,6 @@ const FormikTextField = (Props) => {
       </InputAdornment>
     )
   };
-  const rowsNumber = isWithTwoLines ? 2 : 1;
 
   return (
     <FormControl
@@ -64,8 +63,6 @@ const FormikTextField = (Props) => {
         onChange={handleChange}
         InputProps={inputProps}
         type={showPassword ? "text" : type}
-        multiline={isWithTwoLines}
-        rows={rowsNumber}
         {...props}
       />
       {error && (

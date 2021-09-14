@@ -24,10 +24,4 @@ export const useLoginStyles = makeStyles(theme => ({
     marginBottom: 30,
   },
 
-  logoStyle: {
-    marginTop: 28,
-    maxHeight: 40,
-    maxWidth: 170
-  },
-
 }));
